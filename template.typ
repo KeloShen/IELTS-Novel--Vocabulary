@@ -84,7 +84,7 @@
     v(0.5em)
   }
 
-  // --- Title Page Construction ---
+// --- Title Page Construction ---
   {
     set page(header: none, numbering: none) 
     align(center + horizon)[
@@ -100,9 +100,11 @@
       
       #v(4em)
       
-      #circle(radius: 3cm, fill: box-bg, stroke: 1pt + gray)
-      #v(1em)
-      #text(fill: gray)[(Cover Image Placeholder)]
+      // ============================================
+      // 这里是修改的地方：替换掉原来的 circle 和 placeholder text
+      // 确保你的图片文件名为 cover.jpg，或者修改下面的文件名
+      // ============================================
+      #image("cover.jpg", width: 80%)
 
       #v(1fr)
       #text(size: 1.2em)[Written by] \
